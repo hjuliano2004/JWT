@@ -1,9 +1,7 @@
 package seguranca.projeto.services;
 
-import java.util.Base64;
 import java.util.List;
 
-import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -15,7 +13,6 @@ import seguranca.projeto.dtos.users.UsuarioRequestDto;
 import seguranca.projeto.dtos.users.UsuarioResponseDto;
 import seguranca.projeto.entities.Usuario;
 import seguranca.projeto.mappers.UsuarioMapper;
-import seguranca.projeto.dtos.logins.*;
 
 @Service
 @RequiredArgsConstructor
@@ -78,26 +75,7 @@ public class UsuarioServicesImpl implements UsuarioServices{
             .orElseThrow(() -> new UsernameNotFoundException("Usuário não encontrado: " + username));
     }
 
-    @Override
-    public LoginResponseDto autenticate(LoginRequestDto dto){
-        Usuario usuario = repository.findByUsername(dto.getUsername()).orElseThrow();
-        if(!encoder.matches(dto.getPassword(), usuario.getPassword())){
-            throw new BadCredentialsException("invalid username or password");
-        }
 
-
-        /*
-                         Basic emV6aW5obzpsb2xv' \
-
-                              "emV6aW5obzpsb2xv"
-         */
-        String token = Base64.getEncoder().encodeToString(
-            (usuario.getUsername() + ":" + dto.getPassword()).getBytes()
-        );
-        
-
-        return LoginResponseDto.builder().type("Basic").token(token).build();
-    }
 
 
 }

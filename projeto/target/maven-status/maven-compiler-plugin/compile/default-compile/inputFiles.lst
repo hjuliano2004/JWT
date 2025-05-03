@@ -1,3 +1,5 @@
+C:\Users\ninja\Desktop\LAB 365\projeto\src\main\java\seguranca\projeto\configs\JwtComponent.java
+C:\Users\ninja\Desktop\LAB 365\projeto\src\main\java\seguranca\projeto\configs\JwtFilter.java
 C:\Users\ninja\Desktop\LAB 365\projeto\src\main\java\seguranca\projeto\configs\SecurityConfig.java
 C:\Users\ninja\Desktop\LAB 365\projeto\src\main\java\seguranca\projeto\Controllers\LoginController.java
 C:\Users\ninja\Desktop\LAB 365\projeto\src\main\java\seguranca\projeto\Controllers\OrganizacaoController.java
@@ -17,6 +19,8 @@ C:\Users\ninja\Desktop\LAB 365\projeto\src\main\java\seguranca\projeto\mappers\U
 C:\Users\ninja\Desktop\LAB 365\projeto\src\main\java\seguranca\projeto\ProjetoApplication.java
 C:\Users\ninja\Desktop\LAB 365\projeto\src\main\java\seguranca\projeto\Repositories\OrganizacaoRepository.java
 C:\Users\ninja\Desktop\LAB 365\projeto\src\main\java\seguranca\projeto\Repositories\UsuarioRepository.java
+C:\Users\ninja\Desktop\LAB 365\projeto\src\main\java\seguranca\projeto\services\LoginService.java
+C:\Users\ninja\Desktop\LAB 365\projeto\src\main\java\seguranca\projeto\services\LoginServiceImpl.java
 C:\Users\ninja\Desktop\LAB 365\projeto\src\main\java\seguranca\projeto\services\OrganizacaoServiceImpl.java
 C:\Users\ninja\Desktop\LAB 365\projeto\src\main\java\seguranca\projeto\services\OrganizacaoServices.java
 C:\Users\ninja\Desktop\LAB 365\projeto\src\main\java\seguranca\projeto\services\UsuarioServices.java
